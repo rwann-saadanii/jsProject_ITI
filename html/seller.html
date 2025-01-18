@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Management Platform</title>
+  <link rel="stylesheet" href="/css/seller.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#" class="nav-link" data-section="product-management">Product Management</a></li>
+        <li><a href="#" class="nav-link" data-section="order-management">Order Management</a></li>
+        <li><a href="#" class="nav-link" data-section="browse-products">Browse Products</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Product Management Section -->
+    <section id="product-management" class="content-section">
+      <h2>Product Management</h2>
+      <button class="add-product-btn">Add Product</button>
+      <table id="productTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- Order Management Section -->
+    <section id="order-management" class="content-section">
+      <h2>Order Management</h2>
+      <table id="orderTable">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Customer</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- Browse Products Section -->
+    <section id="browse-products" class="content-section">
+      <h2>Browse Products</h2>
+      <input type="text" id="search-bar" placeholder="Search products...">
+      <div id="product-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Product Management Platform</p>
+  </footer>
+
+  <script src="/js/seller.js"></script>
+</body>
+</html>

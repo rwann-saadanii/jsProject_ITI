@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+    <!-- Sidebar -->
+<!-- Sidebar -->
+<div class="sidebar">
+    <h2>Admin Dashboard</h2>
+    <a href="#" class="nav-link" data-section="user-management">User Management</a>
+    <a href="#" class="nav-link" data-section="product-management">Product Management</a>
+    <a href="#" class="nav-link" data-section="order-management">Order Management</a>
+    
+</div>
+
+
+    <!-- Main Content -->
+   <!-- Main Content -->
+<div class="main-content">
+    <button class="logout-btn">Logout</button>
+    <h1>Welcome, Admin!</h1>
+
+    <!-- User Management Section -->
+    <div id="user-management">
+        <h2>User Management</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="userTable">
+                <!-- Users will be dynamically loaded here -->
+            </tbody>
+        </table>
+        <button class="add-user-btn">Add User</button>
+    </div>
+
+    <!-- Product Management Section -->
+    <div id="product-management" style="display: none;">
+        <h2>Product Management</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="productTable">
+                <!-- Products will be dynamically loaded here -->
+            </tbody>
+        </table>
+        <button class="add-product-btn">Add Product</button>
+    </div>
+
+    <!-- Order Management Section -->
+    <div id="order-management" style="display: none;">
+        <h2>Order Management</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer</th>
+                    <th>Total</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="orderTable">
+                <!-- Orders will be dynamically loaded here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+    <script src="/js/admin.js"></script>
+</body>
+</html>

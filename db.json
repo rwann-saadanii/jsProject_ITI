@@ -1,0 +1,174 @@
+{
+  "users": [
+    {
+      "name": "dina",
+      "email": "dina@gmail.com",
+      "role": "customer",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Customer A",
+      "email": "customerA@example.com",
+      "password": "customer123",
+      "role": "customer",
+      "status": "activated"
+    },
+    {
+      "id": "3",
+      "name": "Customer B",
+      "email": "customerB@example.com",
+      "password": "customer246",
+      "role": "customer",
+      "status": "pending"
+    },
+    {
+      "id": "4",
+      "name": "Rawan",
+      "email": "rawanemad500@gmail.com",
+      "password": "rawan123",
+      "role": "customer",
+      "status": "activated"
+    },
+    {
+      "id": "5",
+      "name": "Mustafa",
+      "email": "mustafa@gmail.com",
+      "password": "mustafa123",
+      "role": "customer",
+      "status": "activated"
+    },
+    {
+      "id": "6",
+      "name": "Ahmed",
+      "email": "ahmed@gmail.com",
+      "password": "ahmed123",
+      "role": "customer",
+      "status": "activated"
+    },
+    {
+      "id": "1737210064315",
+      "name": "nur",
+      "email": "nur@gmail.com",
+      "password": "1234",
+      "role": "customer",
+      "status": "pending"
+    },
+    {
+      "id": "1737210229417",
+      "name": "samy",
+      "email": "samy@gmail.com",
+      "password": "1234",
+      "role": "customer",
+      "status": "pending"
+    },
+    {
+      "id": "1737228941492",
+      "name": "nur",
+      "email": "nur@gmail.com",
+      "password": "1234",
+      "role": "customer",
+      "status": "pending"
+    },
+    {
+      "id": "bad0",
+      "name": "mostafa",
+      "email": "mostafa@gmail.com",
+      "role": "customer"
+    },
+    {
+      "id": "1cb5",
+      "name": "sara",
+      "email": "sara@gmail.com",
+      "role": "customer"
+    },
+    {
+      "id": 1737238521415,
+      "name": "sara",
+      "email": "sara@gmail.com",
+      "password": "1234",
+      "role": "customer",
+      "status": "pending"
+    },
+    {
+      "id": 1737238933542,
+      "name": "deja",
+      "email": "deja@gmail.com",
+      "password": "1234",
+      "role": "seller",
+      "status": "pending"
+    },
+    {
+      "id": 1737239193050,
+      "name": "ahmedd",
+      "email": "ahmedd@gmail.com",
+      "password": "1234",
+      "role": "admin",
+      "status": "pending"
+    },
+    {
+      "id": 1737239391107,
+      "name": "adel",
+      "email": "adel@gmail.com",
+      "password": "1234",
+      "role": "customer",
+      "status": "pending"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Product 1",
+      "price": 100,
+      "description": "newnwewnnnn",
+      "img": "../images/Frame 611.png",
+      "sellerId": 3
+    },
+    {
+      "id": "2",
+      "name": "Product 2",
+      "price": 100,
+      "description": "newnwewnnnn",
+      "img": "../images/Frame 612.png",
+      "sellerId": 4
+    },
+    {
+      "id": "3",
+      "name": "Product 3",
+      "price": 100,
+      "description": "newnwewnnnn",
+      "img": "../images/Frame 614.png",
+      "sellerId": 6
+    },
+    {
+      "name": "laptoppp",
+      "price": "365$",
+      "stock": "1234",
+      "id": "6e3b"
+    }
+  ],
+  "orders": [
+    {
+      "status": "activated",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "userId": 2,
+      "productId": 1,
+      "quantity": 2
+    },
+    {
+      "id": "3",
+      "userId": 3,
+      "productId": 3,
+      "quantity": 3
+    },
+    {
+      "id": "4",
+      "userId": 4,
+      "productId": 4,
+      "quantity": 1
+    }
+  ]
+}

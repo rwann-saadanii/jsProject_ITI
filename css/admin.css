@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background-color: #646363;
+    padding: 20px;
+    color: white;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+    width: 80%;
+    padding: 20px;
+}
+
+.main-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.main-content .logout-btn {
+    float: right;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-content .logout-btn:hover {
+    background-color: #0011ff;
+}
+
+/* User Management Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #312a2a;
+    color: white;
+}
+
+.actions button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.actions .edit-btn {
+    background-color: #a72876;
+}
+
+.actions .edit-btn:hover {
+    background-color: #a72876;
+}
+
+.actions .delete-btn {
+    background-color: #dc3545;
+}
+
+.actions .delete-btn:hover {
+    background-color: #c82333;
+}
+
+.add-user-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-user-btn:hover {
+    background-color: #0011ff;
+}
