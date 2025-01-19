@@ -83,7 +83,7 @@
       "role": "customer"
     },
     {
-      "id": 1737238521415,
+      "id": "1737238521415",
       "name": "sara",
       "email": "sara@gmail.com",
       "password": "1234",
@@ -91,7 +91,7 @@
       "status": "pending"
     },
     {
-      "id": 1737238933542,
+      "id": "1737238933542",
       "name": "deja",
       "email": "deja@gmail.com",
       "password": "1234",
@@ -99,7 +99,7 @@
       "status": "pending"
     },
     {
-      "id": 1737239193050,
+      "id": "1737239193050",
       "name": "ahmedd",
       "email": "ahmedd@gmail.com",
       "password": "1234",
@@ -107,28 +107,44 @@
       "status": "pending"
     },
     {
-      "id": 1737239391107,
+      "id": "1737239391107",
       "name": "adel",
       "email": "adel@gmail.com",
       "password": "1234",
       "role": "customer",
+      "status": "pending"
+    },
+    {
+      "id": 1737248463129,
+      "name": "tata",
+      "email": "tata@gmail.com",
+      "password": "1234",
+      "role": "seller",
+      "status": "pending"
+    },
+    {
+      "id": 1737248522928,
+      "name": "sasa",
+      "email": "sasa@gmail.com",
+      "password": "1234",
+      "role": "seller",
       "status": "pending"
     }
   ],
   "products": [
     {
       "id": "1",
-      "name": "Product 1",
-      "price": 100,
-      "description": "newnwewnnnn",
+      "name": "Playstation Arm",
+      "price": "100$",
+      "description": "GP11 Shooter USB Gamepad",
       "img": "../images/Frame 611.png",
       "sellerId": 3
     },
     {
       "id": "2",
-      "name": "Product 2",
-      "price": 100,
-      "description": "newnwewnnnn",
+      "name": "Keyboard",
+      "price": "100$",
+      "description": "new style keyboard",
       "img": "../images/Frame 612.png",
       "sellerId": 4
     },
@@ -141,10 +157,74 @@
       "sellerId": 6
     },
     {
-      "name": "laptoppp",
+      "name": "laptop",
       "price": "365$",
       "stock": "1234",
-      "id": "6e3b"
+      "id": "6e3b",
+      "img": "../images/Frame 611.png"
+    },
+    {
+      "name": "lap",
+      "price": "400$",
+      "stock": "1234",
+      "id": "6e3b",
+      "img": "../images/71RdoeXxtrL 1.png"
+    },
+    {
+      "name": "pc",
+      "price": "800$",
+      "stock": "1234",
+      "id": "6e3b",
+      "img": "../images/New-Mercedes-Benz-Gtr-Licensed-Ride-on-Car-Kids-Electric-Toy-Car 1.png"
+    },
+    {
+      "name": "chair",
+      "price": "800$",
+      "stock": "1234",
+      "id": "6e3b",
+      "img": "../images/ideapad-gaming-3i-01-500x500 1.png"
+    },
+    {
+      "name": "laptoppp",
+      "price": "800$",
+      "stock": "1234",
+      "id": "6e3b",
+      "img": "../images/GP11_PRD3 1.png"
+    },
+    {
+      "name": "laptoppp",
+      "price": "800$",
+      "stock": "1234",
+      "id": "6e3b",
+      "img": "../images/eos-250d-03-500x500 1.png"
+    },
+    {
+      "name": "laptoppp",
+      "price": "800$",
+      "stock": "1234",
+      "id": "6e3b",
+      "img": "../images/698717_Z8A1X_3475_001_100_0000_Light-Reversible-quilted-satin-jacket 1.png"
+    },
+    {
+      "name": "laptoppp",
+      "price": "800$",
+      "stock": "1234",
+      "id": "6e3b",
+      "img": "../images/Copa_Sense 1.png"
+    },
+    {
+      "name": "laptoppp",
+      "price": "800$",
+      "stock": "1234",
+      "id": "6e3b",
+      "img": "../images/698717_Z8A1X_3475_001_100_0000_Light-Reversible-quilted-satin-jacket 1.png"
+    },
+    {
+      "name": "laptoppp",
+      "price": "800$",
+      "stock": "1234",
+      "id": "6e3b",
+      "img": "../images/71RdoeXxtrL 1.png"
     }
   ],
   "orders": [

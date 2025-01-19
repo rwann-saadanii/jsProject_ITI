@@ -1,9 +1,1 @@
-project/
-├── index.html
-├── styles.css
-├── admin.js
-├── customer.js
-├── seller.js
-├── anonymous.js
-├── app.js
-├── db.json
+© Copyright Furniro 2022 - All rights reserved
