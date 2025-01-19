@@ -115,7 +115,7 @@
       "status": "pending"
     },
     {
-      "id": 1737248463129,
+      "id": "1737248463129",
       "name": "tata",
       "email": "tata@gmail.com",
       "password": "1234",
@@ -123,11 +123,19 @@
       "status": "pending"
     },
     {
-      "id": 1737248522928,
+      "id": "1737248522928",
       "name": "sasa",
       "email": "sasa@gmail.com",
       "password": "1234",
       "role": "seller",
+      "status": "pending"
+    },
+    {
+      "id": 1737283797603,
+      "name": "sandy",
+      "email": "sandy@gmail.com",
+      "password": "1234",
+      "role": "admin",
       "status": "pending"
     }
   ],

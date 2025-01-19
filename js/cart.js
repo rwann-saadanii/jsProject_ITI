@@ -1,63 +1,57 @@
-const productList = document.getElementById("product-list");
 const cartList = document.getElementById("cart-list");
 const totalPriceElement = document.getElementById("total-price");
-let cart = [];
 
-
-fetch('db.json')
-    .then(response => response.json())
-    .then(data => {
-        renderProducts(data.products);
-    })
-    .catch(error => console.error('Error loading the JSON file', error));
-
-function renderProducts(products) {
-    products.forEach(product => {
-        const productElement = document.createElement("div");
-        productElement.classList.add("product-item");
-        productElement.innerHTML = `
-            <img src="${product.img}" alt="${product.name}">
-            <h3>${product.name}</h3>
-            <p>${product.description}</p>
-            <p>Price: $${product.price}</p>
-            <button onclick="addToCart(${product.id}, '${product.name}', ${product.price})">Add to Cart</button>
-        `;
-        productList.appendChild(productElement);
-    });
-}
-
-function addToCart(id, name, price) {
-    const productInCart = cart.find(item => item.id === id);
-
-    if (productInCart) {
-        productInCart.quantity += 1;
-    } else {
-        cart.push({ id, name, price, quantity: 1 });
-    }
-
+// Ensure that the DOM is fully loaded before rendering the cart
+document.addEventListener('DOMContentLoaded', function () {
     renderCart();
-}
+});
 
-function removeFromCart(id) {
-    cart = cart.filter(item => item.id !== id);
-    renderCart();
-}
-
+// Render the items in the cart from localStorage
 function renderCart() {
-    cartList.innerHTML = '';
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];  // Retrieve cart from localStorage
+    cartList.innerHTML = '';  // Clear previous cart content
     let totalPrice = 0;
 
+    // If cart is empty, display a message
+    if (cart.length === 0) {
+        cartList.innerHTML = "<p>Your cart is empty.</p>";
+        totalPriceElement.textContent = "Total Price: $0";
+        return;
+    }
+
+    // Display cart items
     cart.forEach(item => {
         const cartItem = document.createElement("li");
         cartItem.classList.add("cart-item");
+
+        // Ensure the price is a valid number and multiply by quantity
+        const itemTotalPrice = (Number(item.price) * Number(item.quantity)).toFixed(2);
+
+        // Add the Remove button for each cart item
         cartItem.innerHTML = `
             <span>${item.name} x ${item.quantity}</span>
-            <span>$${item.price * item.quantity}</span>
+            <span>$${itemTotalPrice}</span>
             <button onclick="removeFromCart(${item.id})">Remove</button>
         `;
+        
+        // Append the cart item to the cart list
         cartList.appendChild(cartItem);
-        totalPrice += item.price * item.quantity;
+
+        // Update total price (ensure it is a number)
+        totalPrice += Number(item.price) * Number(item.quantity);
     });
 
-    totalPriceElement.textContent = `Total Price: $${totalPrice}`;
+    // Update the total price display
+    totalPriceElement.textContent = `Total Price: $${totalPrice.toFixed(2)}`;
+}
+
+// Remove an item from the cart
+function removeFromCart(id) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];  // Retrieve cart from localStorage
+    cart = cart.filter(item => item.id !== id);  // Remove item by ID
+
+    // Save the updated cart back to localStorage
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    renderCart();  // Re-render the cart after removal
 }

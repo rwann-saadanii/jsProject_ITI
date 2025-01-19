@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
   <script src="js/register.js" defer></script>
+  <script src="js/cart.js"></script>
 </head>
 <body>
   <!-- Header -->
@@ -35,6 +36,9 @@
         <div class="icons">
           <a href="/html/customer.html"><img src="/images/user.png" alt="Wishlist"></a>
           <a href="/html/cart.html"><img src="/images/Cart1 with buy.png" alt="Cart"></a>
+          <button id="viewCart">View Cart</button>
+          <div id="cartContainer"><a href="html/cart.html"></a></div>
+
         </div>
       </div>
     </div>
@@ -74,7 +78,13 @@
     <div class="product-cards"></div>
 </section>
     -->
-    <button class="view-all">View All Products</button>
+    <div id="view-all">
+      <a href="/html/products.html">
+          <button>View All Products</button>
+      </a>
+  </div>
+  
+    
   </section> 
   <footer>
     <div class="footer-container">

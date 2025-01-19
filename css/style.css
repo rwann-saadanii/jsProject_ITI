@@ -83,6 +83,20 @@ ul {
   margin-top: 20px;
 }
 
+.card{
+  padding: 70px 20px;
+  border: 1px solid #bdbdbd;
+  border-radius: 21px;
+  margin: 20px;
+}
+#view-all {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;    /* Vertically center (if needed) */
+  margin: 0 auto;         /* Center itself in its parent */
+  width: 100%;            /* Ensure it spans the container width */
+  text-align: center;     /* Ensure the content inside is centered */
+}
 
 .icons img {
   width: 20px;
@@ -190,6 +204,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   
 }
 
